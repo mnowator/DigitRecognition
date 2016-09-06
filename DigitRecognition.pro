@@ -13,8 +13,14 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+        mainwindow.cpp \
+    ../NN-XOR/neuronslayer.cpp \
+    ../NN-XOR/neuron.cpp \
+    ../NN-XOR/neuralnetwork.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += mainwindow.h \
+    ../NN-XOR/neuronslayer.h \
+    ../NN-XOR/neuron.h \
+    ../NN-XOR/neuralnetwork.h
 
 FORMS    += mainwindow.ui
