@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include "neuralnetwork.h"
 
 namespace Ui {
 class MainWindow;
@@ -17,6 +18,11 @@ public:
 
 private:
     Ui::MainWindow *ui;
+
+    NeuralNetwork* m_nn;
+
+private slots:
+    void guessDigit(QVector<double> image);
 };
 
 #endif // MAINWINDOW_H

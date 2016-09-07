@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT       += core gui xml
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -14,13 +14,15 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    ../NN-XOR/neuronslayer.cpp \
-    ../NN-XOR/neuron.cpp \
-    ../NN-XOR/neuralnetwork.cpp
+    neuron.cpp \
+    neuronslayer.cpp \
+    neuralnetwork.cpp \
+    scribbler.cpp
 
 HEADERS  += mainwindow.h \
-    ../NN-XOR/neuronslayer.h \
-    ../NN-XOR/neuron.h \
-    ../NN-XOR/neuralnetwork.h
+    neuron.h \
+    neuronslayer.h \
+    neuralnetwork.h \
+    scribbler.h
 
 FORMS    += mainwindow.ui
